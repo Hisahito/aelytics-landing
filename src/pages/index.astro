@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
+import PainSolution from '../components/PainSolution';
 import Pricing from '../components/Pricing';
 import CTA from '../components/CTA';
 ---
 <Layout>
-  <Hero />
-  <Features />
-  <Pricing />
-  <CTA />
+  <Hero client:load/>
+  <Features client:load/>
+  <PainSolution />
+  <Pricing client:load/>
+  <CTA client:load/>
 </Layout>

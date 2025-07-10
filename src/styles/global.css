@@ -2,3 +2,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Julio – Arcoíris Pride: rayas verticales */
+.pride-gradient-text {
+    background: linear-gradient(
+      to bottom,
+      #0000FF 0%,    /* Azul */
+      #0000FF 25%,
+      #FF0000 25%,   /* Rojo */
+      #FF0000 50%,
+      #FFFF00 50%,   /* Amarillo */
+      #FFFF00 75%,
+      #00FF00 75%,   /* Verde */
+      #00FF00 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Octubre – Halloween: flash naranja → negro → base */
+  @keyframes halloween {
+    0%   { color: #ff7518; }
+    50%  { color: #000000; }
+    100% { color: #7c3aed; } /* base Indigo-600 */
+  }
+  .halloween-animation {
+    animation: halloween 2s forwards;
+  }
+  
+  /* Diciembre – Navidad: rojo → verde → base */
+  @keyframes xmas {
+    0%   { color: #ff0000; }
+    50%  { color: #00ff00; }
+    100% { color: #7c3aed; } /* base Indigo-600 */
+  }
+  .xmas-animation {
+    animation: xmas 2s forwards;
+  }
+  
